@@ -1,0 +1,7 @@
+.home_section {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
