@@ -5,6 +5,7 @@
   height: 100px;
   position: sticky;
   top: 0;
+  left: 0;
   background-color: #fff;
   z-index: 100;
   width: 100%;
@@ -34,6 +35,9 @@
   border: 1px solid lightgrey;
   border-radius: 999px;
 }
+.header_searchBar:hover {
+  box-shadow: 0px 6px 10px -9px rgba(0, 0, 0, 0.75);
+}
 
 .header_searchBar > input {
   border: none;
@@ -59,8 +63,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* width: 15vw; */
   margin-right: 80px;
+}
+
+.header_right > p {
+  padding: 10px;
+}
+
+.header_right > p:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+}
+
+.header_globe {
+  margin: 0 15px;
+  padding: 10px;
+}
+
+.header_globe:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 30px;
+}
+
+.header_avatarContainer {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid lightgray;
+  border-radius: 50px;
+  background-color: #fff;
+}
+
+.header_avatarContainer:hover {
+  box-shadow: 0px 6px 10px -9px rgba(0, 0, 0, 0.75);
+}
+
+.header_Dehaze {
+  margin-left: 6px;
+  margin-right: 10px;
+}
+
+.header_avatar {
+  height: 30px !important;
+  width: 30px !important;
 }
 
 @media only screen and (max-width: 950px) {

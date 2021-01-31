@@ -1,0 +1,29 @@
+.specialLocation {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: calc(33%);
+  flex: 1;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.specialLocation > img {
+  object-fit: fill;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.specialLocation_info {
+  padding: 10px;
+}
+
+.specialLocation_info > h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.specialLocation_info > p {
+  font-size: 16px;
+}

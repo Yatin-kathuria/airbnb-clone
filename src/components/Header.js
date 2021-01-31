@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
 import airbnb_logo from "../images/Airbnb.jpg";
 import SearchIcon from "@material-ui/icons/Search";
 import LanguageIcon from "@material-ui/icons/Language";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import DehazeIcon from "@material-ui/icons/Dehaze";
 import { Avatar } from "@material-ui/core";
 import { Link } from "react-router-dom";
-
-// import airbnb_logo from "../logo192.png";
+import LoginSignUp from "./LoginSignUp";
 
 function Header() {
+  const [isShow, setIsShow] = useState(false);
+
+  const popoverShowHandler = () => {
+    setIsShow(!isShow);
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -23,9 +28,12 @@ function Header() {
       </div>
       <div className="header_right">
         <p>Become a Host</p>
-        <LanguageIcon />
-        <ExpandMoreIcon />
-        <Avatar />
+        <LanguageIcon className="header_globe" />
+        <div className="header_avatarContainer" onClick={popoverShowHandler}>
+          <DehazeIcon className="header_Dehaze" />
+          <Avatar className="header_avatar" />
+        </div>
+        {isShow && <LoginSignUp />}
       </div>
     </div>
   );

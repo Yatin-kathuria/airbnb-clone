@@ -3,5 +3,12 @@
   padding: 30px;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+}
+
+.home_specialLocation {
+  display: flex;
+  padding: 30px;
+  padding-bottom: 0;
+  justify-content: space-between;
+  align-items: center;
 }

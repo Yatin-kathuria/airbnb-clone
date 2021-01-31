@@ -18,24 +18,27 @@
 }
 
 .banner_info {
-  background-color: black;
   color: white;
   padding: 50px 50px 50px 40px;
   width: 300px;
-  min-height: 223px;
+  height: 223px;
+}
+
+.banner_info > h1 {
+  font-size: 72px;
+  line-height: 72px;
+  color: #f8888a;
 }
 .banner_info > button {
-  background-color: #ff7779;
-  color: white;
+  background-color: #fff;
+  color: black;
+  border: none;
+  border-radius: 10px;
   text-transform: inherit;
   margin-top: 20px;
   font-weight: 600;
 }
 .banner_info > button:hover {
-  background-color: white;
-  color: #ff7779;
-}
-
-.banner_info > h5 {
-  margin-top: 5px;
+  background-color: #fff;
+  color: black;
 }

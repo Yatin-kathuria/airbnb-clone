@@ -21,10 +21,9 @@ function Banner() {
         {showSearch && <Search />}
       </div>
       <div className="banner_info">
-        <h1>Get out and stretch your imagination</h1>
-        <h5>
-          Plan a different kind of getaway to uncover the hidden gems near you
-        </h5>
+        <h1>
+          Go <br /> Near
+        </h1>
         <Button variant="outlined" onClick={() => history.push("/search")}>
           Explore nearby stays
         </Button>
